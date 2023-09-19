@@ -52,8 +52,8 @@ form.addEventListener('submit', (e) => {
 // };
 //https://api.openweathermap.org/data/2.5/weather?q=siliguri&appid=1b8506141e894f86f859b0c82407bf6d&units=metric
 function fetchWeatherData(){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=8c6cafdded6f41078ec212737230909&q=${cityinput}`)
-    // fetch(`https://api.weatherapi.com/v1/current.json?key=8c6cafdded6f41078ec212737230909&q=${cityinput}`)
+    //fetch(`http://api.weatherapi.com/v1/current.json?key=8c6cafdded6f41078ec212737230909&q=${cityinput}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=8c6cafdded6f41078ec212737230909&q=${cityinput}`)
     .then(response => response.json())
     .then( data => {
         console.log(data);
